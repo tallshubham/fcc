@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+#survey-form{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
