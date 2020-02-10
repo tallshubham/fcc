@@ -10,55 +10,69 @@
 </head>
 
 <body>
-    <main>
+    <header>
         <h1 id="title">Survey Form</h1>
         <p id="description">Please help us to better serve you</p>
+    </header>
+    <main>
         <form id="survey-form">
-            <label for="name" id="name-label">Name</label>
-            <input type="text" name="name" id="name" placeholder="Please enter your name" required />
-            <br>
-            <label for="email" id="email-label">Email</label>
-            <input type="email" name="email" id="email" placeholder="Please enter your email-id" required />
-            <label for="number" id="number-label">Age</label>
-            <input type="number" min="0" max="150" name="number-age" id="number" placeholder="Age" required />
-            <label for="dropdown"></label>
-            <select name="color" id="dropdown">
-                <option selected disabled>Select your favourite color</option>
-                <option>White</option>
-                <option>Black</option>
-                <option>Red</option>
-                <option>Green</option>
-            </select>
-            <fieldset>
-                <legend>How much water do you consume in a day?</legend>
-                <label>
-                    <input type="radio" name="water-consumtion" value="1 litre">1 Litre
+            <div class="form-field">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Please enter your name" required />
+            </div><br>
+            <div class="form-field">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Please enter your email-id" required />
+            </div>
+            <div class="form-field">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" min="0" max="150" name="number-age" id="number" placeholder="Age" required />
+            </div>
+            <div class="form-field">
+                <label for="dropdown"></label>
+                <select name="color" id="dropdown">
+                    <option selected disabled>Select your favourite color</option>
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Red</option>
+                    <option>Green</option>
+                </select></div>
+            <div class="form-field">
+                <fieldset>
+                    <legend>How much water do you consume in a day?</legend>
+                    <label>
+                        <input type="radio" name="water-consumtion" value="1 litre">1 Litre
+                    </label>
+                    <label>
+                        <input type="radio" name="water-consumtion" value="2 litre">2 Litre
+                    </label>
+                    <label>
+                        <input type="radio" name="water-consumtion" value="3 litre">3 Litre
+                    </label>
+                </fieldset>
+            </div>
+            <div class="form-field">
+                <fieldset>
+                    <legend>Have you been to following places:</legend>
+                    <label>
+                        <input type="checkbox" name="places" value="Mumbai">Mumbai
+                    </label>
+                    <label>
+                        <input type="checkbox" name="places" value="Delhi">Delhi
+                    </label>
+                    <label>
+                        <input type="checkbox" name="places" value="Kolkata">Kolkata
+                    </label>
+                    <label>
+                        <input type="checkbox" name="places" value="Chennai">Chennai
+                    </label>
+                </fieldset>
+            </div>
+            <div class="form-field">
+                <label for="textarea">Addition information
+                    <textarea name="textarea" cols="30" rows="10"></textarea>
                 </label>
-                <label>
-                    <input type="radio" name="water-consumtion" value="2 litre">2 Litre
-                </label>
-                <label>
-                    <input type="radio" name="water-consumtion" value="3 litre">3 Litre
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Have you been to following places:</legend>
-                <label>
-                    <input type="checkbox" name="places" value="Mumbai">Mumbai
-                </label>
-                <label>
-                    <input type="checkbox" name="places" value="Delhi">Delhi
-                </label>
-                <label>
-                    <input type="checkbox" name="places" value="Kolkata">Kolkata
-                </label>
-                <label>
-                    <input type="checkbox" name="places" value="Chennai">Chennai
-                </label>
-            </fieldset>
-            <label for="textarea">Addition information
-                <textarea name="textarea" cols="30" rows="10"></textarea>
-            </label>
+            </div>
             <button type="submit" id="submit" value="Submit">Submit</button>
         </form>
     </main>

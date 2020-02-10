@@ -7,8 +7,23 @@ body {
   padding: 10px;
   background: #f1f1f1;
 }
-#survey-form{
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
+#survey-form {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main {
+  margin: 30px auto 0 auto;
+}
+.form-field {
+  display: flex;
+  margin: 5px 15px;
+}
+.form-field label{
+  flex-basis: 20%;
+  /* align-self: flex-end; */
+  justify-self: flex-end;
+}
+.form-field input{
+  flex-basis: 80%;
 }
