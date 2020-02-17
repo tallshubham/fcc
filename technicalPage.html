@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentation of C</title>
+    <link rel="stylesheet" href="technicalPage.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <nav id="navbar">
+                <header>Elements of C</header>
+                <ul>
+                    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li><a class="nav-link" href="#Structure_of_C">Structure of C</a></li>
+                    <li><a class="nav-link" href="#Tokens">Tokens</a></li>
+                    <li><a class="nav-link" href="#Comments">Comments</a></li>
+                    <li><a class="nav-link" href="#Keywords">Keywords</a></li>
+                    <li><a class="nav-link" href="#Identifiers">Identifiers</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <main id="main-doc">
+                <section id="Introduction" class="main-section">
+                    <header>Introduction</header>
+                    <p>C is a procedural programming language. It was initially developed by Dennis Ritchie in the year
+                        1972. It
+                        was mainly developed as a system programming language to write an operating system. The main
+                        features of
+                        C language include low-level access to memory, a simple set of keywords, and clean style, these
+                        features
+                        make C language suitable for system programmings like an operating system or compiler
+                        development.
+                        Many later languages have borrowed syntax/features directly or indirectly from C language. Like
+                        syntax
+                        of Java, PHP, JavaScript, and many other languages are mainly based on C language. C++ is nearly
+                        a
+                        superset of C language (There are few programs that may compile in C, but not in C++).</p>
+                </section>
+                <section id="Structure_of_C" class="main-section">
+                    <header>Structure of C</header>
+                    <article>Basic Hello World program<br>
+                        <code>
+                    <pre>
+                        #include <stdio.h> 
+                        int main(void) 
+                        { 
+                            printf("GeeksQuiz"); 
+                            return 0; 
+                         } 
+                    </pre>
+                </code></article>
+                </section>
+                <section id="Tokens" class="main-section">
+                    <header>Tokens</header>
+                    <p>In a C source program, the basic element recognized by the compiler is the "token." A token is
+                        source-program text that the compiler does not break down into component elements.</p>
+                    <code>
+                    <h4>Syntax</h4>
+                <ul>
+                    <li>token: keyword</li>
+                    <li>identifier</li>
+                    <li>constant</li>
+                    <li>string-literal</li>
+                    <li>operator</li>
+                    <li>punctuator</li>
+                </ul>
+            </code>
+                    <p>
+                        The keywords, identifiers, constants, string literals, and operators described in this section
+                        are
+                        examples of tokens. Punctuation characters such as brackets ([ ]), braces ({ }), parentheses ( (
+                        )
+                        ),
+                        and commas (,) are also tokens.
+                    </p>
+                </section>
+                <section id="Comments" class="main-section">
+                    <header>Comments</header>
+                    <p>
+                        A "comment" is a sequence of characters beginning with a forward slash/asterisk combination (/*)
+                        that is
+                        treated as a single white-space character by the compiler and is otherwise ignored. A comment
+                        can
+                        include any combination of characters from the representable character set, including newline
+                        characters, but excluding the "end comment" delimiter (*/). Comments can occupy more than one
+                        line
+                        but
+                        cannot be nested.
+                    </p>
+                    <p>
+                        Comments can appear anywhere a white-space character is allowed. Since the compiler treats a
+                        comment
+                        as
+                        a single white-space character, you cannot include comments within tokens. The compiler ignores
+                        the
+                        characters in the comment.
+                    </p>
+                    <p>Use comments to document your code. This example is a comment accepted by the compiler:</p>
+                    <code>
+                <pre style="color:green">
+                        /* Comments can contain keywords such as
+                        for and while without generating errors. */
+                </pre>
+            </code>
+                    <p>Comments can appear on the same line as a code statement:</p>
+                    <code>
+                <pre>
+                    <span style="color: blue">printf</span>(<span style="color:red"> "Hello\n" </span>);  <span style="color:green"> /* Comments can go here */</span>
+                </pre>
+            </code>
+                </section>
+                <section id="Keywords" class="main-section">
+                    <header>Keywords</header>
+                    <p>"Keywords" are words that have special meaning to the C compiler.</p>
+                    <p>The C language uses the following keywords:</p>
+                    <table>
+                        <tr>
+                            <th>auto</th>
+                            <th>double</th>
+                            <th>int</th>
+                            <th>struct</th>
+                        </tr>
+                        <tr>
+                            <th>break</th>
+                            <th>else</th>
+                            <th>long</th>
+                            <th>switch</th>
+                        </tr>
+                        <tr>
+                            <th>case</th>
+                            <th>enum</th>
+                            <th>register</th>
+                            <th>typedef</th>
+                        </tr>
+                        <tr>
+                            <th>char</th>
+                            <th>extern</th>
+                            <th>return</th>
+                            <th>union</th>
+                        </tr>
+                        <tr>
+                            <th>const</th>
+                            <th>float</th>
+                            <th>short</th>
+                            <th>unsigned</th>
+                        </tr>
+                        <tr>
+                            <th>continue</th>
+                            <th>for</th>
+                            <th>signed</th>
+                            <th>void</th>
+                        </tr>
+                        <tr>
+                            <th>default</th>
+                            <th>goto</th>
+                            <th>sizeof</th>
+                            <th>volatile</th>
+                        </tr>
+                        <tr>
+                            <th>do</th>
+                            <th>if</th>
+                            <th>static</th>
+                            <th>while</th>
+                        </tr>
+                    </table>
+                    <p>You cannot redefine keywords. However, you can specify text to be substituted for keywords before
+                        compilation by using C <a
+                            href="https://docs.microsoft.com/en-us/cpp/preprocessor/preprocessor-directives?view=vs-2019">
+                            preprocessor directives</a>.</p>
+                </section>
+                <section id="Identifiers" class="main-section">
+                    <header>Identifiers</header>
+                    <p>"Identifiers" or "symbols" are the names you supply for variables, types, functions, and labels
+                        in
+                        your
+                        program. Identifier names must differ in spelling and case from any keywords. You cannot use
+                        keywords
+                        (either C or Microsoft) as identifiers; they are reserved for special use. You create an
+                        identifier
+                        by
+                        specifying it in the declaration of a variable, type, or function. In this example, result is an
+                        identifier for an integer variable, and main and printf are identifier names for functions.</p>
+                    <code>
+                    <pre>
+                            #include <stdio.h>
+
+                                    int main()
+                                    {
+                                        int result;
+                                    
+                                        if ( result != 0 )
+                                            printf_s( "Bad file handle\n" );
+                                    }
+                    </pre>
+            </code>
+                    <p>Once declared, you can use the identifier in later program statements to refer to the associated
+                        value.
+                    </p>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
