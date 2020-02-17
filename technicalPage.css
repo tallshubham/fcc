@@ -35,12 +35,16 @@ code {
 #main-doc {
   grid-area: content;
 }
-@media (max-width: 600px) {
+@media (max-width: 510px) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 200px auto;
     grid-template-areas:
       "navbar"
       "content";
+  }
+  #navbar {
+    overflow-y: auto;
+    max-height: 200px;
   }
 }
